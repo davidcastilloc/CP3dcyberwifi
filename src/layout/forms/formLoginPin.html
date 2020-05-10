@@ -1,0 +1,37 @@
+<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+	<input type="hidden" name="dst" value="$(link-orig)" />
+	<input type="hidden" name="popup" value="true" />
+	<div class="s-login">
+		<div class="logo text-center d-lg-none d-md-none d-block">
+			<a href="#" >
+				<img src="assets/img/logo.svg" class="mb-5" height="128" width="128">
+			</a>
+		</div>
+		<h3>PIN Prepagado</h3>
+		<p>Por favor ingrese su pin prepagado.</p>
+		<!-- <p class="text-right">
+						<small>***Necesitas una cuenta? Envie un mensaje de texto y conviertase en cliente con cuenta VIP 04148176793,<br>
+							</small>
+		</p> -->
+		$(if error)
+		<div class="alert alert-danger">
+			<strong>Error!</strong> $(error).
+		</div>
+		$(endif)
+		<div class="form-group">
+			<input name="username" type="text" value="$(username)" placeholder="PIN" size="30" />
+			<input autocomplete="off" name="password" type="hidden" label="false" placeholder="Password" size="0" />
+		</div>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary btn-block">Iniciar sesión
+		</button>
+	</div>
+	$(if trial == 'yes')
+	<!-- <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn btn-logout text-space">COBA GRATIS</a> -->
+	$(endif)
+	<p class="text-center">
+		<small>3D Wifi Cyber &copy; 2020 FrostByte Corp
+		<br>Puerto Piritu, Anzoategui 0414-8176793</small>
+	</p>
+</form>
