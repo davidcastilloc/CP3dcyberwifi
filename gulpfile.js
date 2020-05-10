@@ -40,7 +40,7 @@ function watchAndServe() {
   })
 
   watch('src/sass/**/*.scss', styles)
-  watch('src/hotspot/*.pug', html)
+  watch('src/**/*', html)
   watch('src/assets/**/*', assets)
   watch('dist/hotspot/*.html').on('change', browserSync.reload)
 }
