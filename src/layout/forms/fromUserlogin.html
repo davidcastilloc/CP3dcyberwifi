@@ -9,12 +9,6 @@
 		</div>
 		<h3>Iniciar sesión</h3>
 		<p>Por favor ingrese su usuario y contraseña.</p>
-		<p class="text-right">
-			<small>
-				Necesitas una cuenta? Envie un mensaje de texto y conviertase en cliente con cuenta VIP 04148176793
-				<br>
-			</small>
-		</p>
 		$(if error)
 		<div class="alert alert-danger">
 			<strong>Error!</strong> $(error).
@@ -31,10 +25,14 @@
 		<button type="submit" class="btn btn-primary btn-block">Iniciar sesión
 		</button>
 	</div>
+	<p class="text-center">
 		$(if trial == 'yes')
 		<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn col btn-logout text-space">PRUEBA GRATIS</a>
 		$(endif)
-	<p class="text-center">
+		$(if trial == 'no')
+		<a href="/pagos.html" class="btn col btn-logout text-space">CLICK AQUI PARA OBTENER ACCESO</a>
+		$(endif)
+		<br>
 		<small>3D Wifi Cyber &copy; 2020 FrostByte Corp
 		<br>Puerto Piritu, Anzoategui 0414-8176793</small>
 	</p>
