@@ -1,11 +1,9 @@
 <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
 	<input type="hidden" name="dst" value="$(link-orig)" />
 	<input type="hidden" name="popup" value="true" />
-	<div class="s-login">
-		<div class="logo text-center d-lg-none d-md-none d-block">
-			<a href="#" >
-				<img src="assets/img/logo.svg" class="mb-5" height="128" width="128">
-			</a>
+	<div class="s-login text-center">
+		<div class="justify-content-center d-flex  d-lg-none d-md-none d-block">
+			<div class="logo row"></div>
 		</div>
 		<h3>Iniciar sesión</h3>
 		<p>Por favor ingrese su usuario y contraseña.</p>
@@ -30,7 +28,7 @@
 		<a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn col btn-logout text-space">PRUEBA GRATIS</a>
 		$(endif)
 		$(if trial == 'no')
-		<a href="/pagos.html" class="btn col btn-logout text-space">CLICK AQUI PARA OBTENER ACCESO</a>
+		<a href="/pagos.html" class="btn col btn-logout text-space">OBTEN ACCESO</a>
 		$(endif)
 		<br>
 		<small>3D Wifi Cyber &copy; 2020 FrostByte Corp

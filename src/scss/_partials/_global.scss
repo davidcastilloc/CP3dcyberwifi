@@ -102,6 +102,15 @@ main{
     }
 }
 
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 120px;
+  height: 65px;
+  background: url("/assets/img/logo.svg");
+  background-size: cover;
+}
+
 .logo-black{
     img{
         height: 60px;
