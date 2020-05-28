@@ -1,26 +1,27 @@
-html:
+html
 {
-    overflow: hidden !important;
+	overflow: hidden !important;
 }
 body
 {
-    overflow: hidden !important;
-    position: relative !important;
-    margin: 0 !important;
-    padding: 0 !important;
+	overflow: hidden !important;
+	position: relative !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity .5s
+	transition: opacity .5s
 }
 
 .fade-enter,
 .fade-leave-to {
-    opacity: 0
+	opacity: 0
 }
 .plan-card {
 	height: 170px;
-	border: 1px solid #1e1584;
+	border: 1px solid rgba(58,71,213,1);
+	background: linear-gradient(120deg, rgba(0,210,255,1) 0%, rgba(58,71,213,1) 100%);
 	border-radius: 10px;
 	overflow: hidden;
 	transition: all .2s ease-in-out;
@@ -32,10 +33,10 @@ body
           	user-select: none;
 }
 .plan-card:hover {
-	 transform : scale(1.1);
+	transform : scale(1.1);
 }
 .plan-card:active {
-	 transform : scale(1);
+	transform : scale(1);
 }
 .bank-name {
 	float: right;
@@ -49,9 +50,9 @@ body
 .mt-2 {
 	margin-top: 10px;
 }
-.buttonicon { 
-	width: 3rem; 
-	height: 3rem; 
+.buttonicon {
+	width: 3rem;
+	height: 3rem;
 }
 .precio{
 	padding-left: 20px;
