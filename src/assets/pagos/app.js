@@ -53,7 +53,7 @@
  			this.loading = true
  		},
  		mounted() {
- 			const baseURL = 'http://192.168.0.2:8000/getCostos';
+ 			const baseURL = 'http://10.5.50.15:8000/getCostos';
  			var request = new XMLHttpRequest();
  			request.open('GET', baseURL, true);
  			request.responseType = 'json';
